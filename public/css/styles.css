@@ -1,0 +1,251 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Example styles.css */
+
+   .mytitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+   }
+
+   .threelinks {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+   }
+   .teamlogoimg {
+    height: 30px;
+    width: auto;
+  }
+
+  
+  @media (min-width: 992px) {
+    .custom-bg {
+      background-image: url('https://wallpaperaccess.com/full/563863.jpg');
+    background-size: cover; /* Makes sure the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 400px; /* Set a height for the div */
+    }
+
+    .f1logo {
+      opacity: 60%;
+    }
+
+    .mainpara {
+      display: none;
+    }
+    .bigmainpara {
+      font-family: "Poppins", system-ui;
+      font-weight: 300;
+      font-style: normal;
+      font-weight: bold;
+      word-spacing: 20px;
+      font-size: x-large;
+      letter-spacing: 6px;
+    }
+    .section4 {
+      display: none;
+    }
+
+  
+}
+
+@media (max-width: 992px) {
+  .bigmainpara {
+    display: none;
+  }
+  .section2 {
+    display: none;
+  }
+  .midsection {
+    display: none;
+  }
+  .drivertitleteam {
+    display: none;
+  }
+
+}
+
+@media(max-width: 1500px) {
+  .champtitle1 {
+    color: rgb(252, 85, 85);
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    font-weight: bolder;
+    word-spacing: 17px;
+    font-size: x-large;
+    letter-spacing: 4px;
+}
+.champtitle2 {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 'normal';
+  word-spacing: 2px;
+}
+}
+
+@media (min-width: 1500px) {
+  .custom-bg {
+    background-image: url('https://wallpaperaccess.com/full/563863.jpg');
+  background-size: cover; /* Makes sure the image covers the entire div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 400px; /* Set a height for the div */
+  }
+
+  .f1logo {
+    opacity: 60%;
+  }
+
+  .bigmainpara {
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-weight: bold;
+    word-spacing: 20px;
+    font-size: x-large;
+    letter-spacing: 6px;
+  }
+
+  .teamlogoimg {
+    height: 50px;
+    width: auto;
+  }
+  .h2name {
+    font-size: 40px;
+    font-weight: bolder;
+    color: ghostwhite;
+  }
+  
+  .champtitle1 {
+    color: rgb(252, 85, 85);
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    font-weight: bolder;
+    word-spacing: 17px;
+    letter-spacing: 4px;
+  }
+  .champtitle2 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 'normal';
+    font-size: 24px;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+ }
+
+
+
+
+}
+
+.section2 {
+  background-image: url("https://images3.alphacoders.com/223/223257.jpg");
+}
+
+.tracktext {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.927);
+  font-weight: normal;
+  font-size: xx-large;
+}
+
+.opac {
+  background-color: rgba(255, 0, 0, 0.472); /* Red background with 50% opacity */;
+}
+.opac1 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+
+.Driverstitle {
+    color: rgb(252, 85, 85);
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-weight: bold;
+    word-spacing: 17px;
+    font-size: x-large;
+    letter-spacing: 4px;
+    background-color: rgb(35, 35, 35);
+}
+.drivertitle {
+  font-family: "Poppins", system-ui;
+  color: ghostwhite;
+  font-weight: bolder;
+  
+}
+.driver-card {
+  background-color: rgba(35,35,35);
+}
+.statpara {
+  font-family: "Poppins", system-ui;
+  color: #acacac;
+  font-weight:normal;
+  padding: 0px;
+}
+.section3 {
+  background-color: black;
+}
+.custom-bg2 {
+  background-image: url('https://wallpaperaccess.com/full/563863.jpg');
+}
+.custom-bg3 {
+  background-image: url('https://storage.googleapis.com/the-race-com.appspot.com/1/2021/08/XPB_1083717_HiRes-1024x683.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.comsoo {
+    font-family: "Poppins", system-ui;
+    color: rgb(190, 35, 35);
+    font-weight: 300;
+    font-style: normal;
+    font-weight: bold;
+    word-spacing: 7px;
+    font-size: medium;
+    letter-spacing: 2px;
+}
+
+.storypara {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 'normal';
+  word-spacing: 2px;
+}
+.accbuttext {
+  font-family: "Poppins", system-ui;
+}
+.teamlogoimg2 {
+  height: 60px;
+  width: auto;
+}
+.statcontainer {
+  background-color: rgb(35,35,35);
+}
+.drivertitleteam {
+  color: #000000;
+  font-weight: bold;
+  background-color: rgb(255, 112, 112);
+}
+.accordion-button {
+  border-radius: 10px !important; /* Adjust the value for more or less roundness */
+}
+.champhead {
+  background-color: rgb(35, 35, 35);
+}
+.accbutt {
+  background-color: rgb(31, 31, 31);
+}
+.h5championship {
+  color: rgb(182, 182, 182);
+}
+.h6team {
+  color: #e3e3e3;
+}
+.h2name {
+  color: ghostwhite;
+  font-weight: bolder;
+}

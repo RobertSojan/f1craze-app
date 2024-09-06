@@ -1,0 +1,61 @@
+<%- include('partials/navbar') %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Craze</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<div class="row section3 justify-content-center my-3 mx-0 text-center align-items-center">
+
+  <div class="row champhead justify-content-center align-items-center mt-5 mb-5 pb-3">
+    <div class="col-12"></div>
+    <div class="col-12">
+      <img class="img-fluid col-md-8 col-lg-6 col-sm-10" src="https://1000marcas.net/wp-content/uploads/2020/01/logo-F1.png">
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-5 champtitle1"><h1>FORMULA-ONE CHAMPIONSHIPS</h1></div>
+    <div class="col-sm-10 col-md-8 col-lg-8 champtitle2 mt-3 pt-3 mb-5 pb-5 ">Everything about the champions and championship battles throughout the years in formula one</div>
+  </div>
+     
+
+    
+
+
+
+
+
+  <div class="accordion col-sm-12 col-md-12 col-lg-10 mt-4" id="championshipsAccordion">
+    <% championships.forEach(champ => { %>
+      <div class="accordion-item">
+        <p class="accordion-header accbuttext " id="heading<%= champ.year %>">
+          <button class="accordion-button accbutt w-100 text-uppercase" style="white-space: nowrap;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= champ.year %>" aria-expanded="true" aria-controls="collapse<%= champ.year %>"><h5 class="mb-0 pb-0 mt-0 pt-3 h5championship " >Championship <%= champ.year %></h5><h2 class="pt-1 pb-0 mb-0 h2name"><%= champ.champion_name %></h2>
+            <img class="teamlogoimg"  src="<%= champ.logo %>" alt="Team Logo" style=" width: auto; margin-left: 10px;"> <h6 class="h6team" ><%= champ.team %></h6>
+          </button>
+        </p>
+        <div id="collapse<%= champ.year %>" class="accordion-collapse collapse" aria-labelledby="heading<%= champ.year %>" data-bs-parent="#championshipsAccordion">
+          <div class="accordion-body mb-2 pb-2 row justify-content-center">
+            <p class="storypara col-12 ">Championship Points: <%= champ.points %></p>
+            <img src="<%= champ.story_image %>" class="col-sm-12 col-md-12 col-lg-8 img-fluid">
+            <p class="storypara col-sm-10 col-md-10 col-lg-10 mt-2 pt-1 "><%= champ.story %></p>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+
+
+<%- include('partials/footer') %>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

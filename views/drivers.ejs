@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Craze</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+      
+  <%- include('partials/navbar') %>
+
+  <div class="row section3 justify-content-center my-3 mx-0 text-center">
+    
+    <div class=" row col-12 Driverstitle container justify-content-center container-fluid align-center mt-5 mb-2 py-5 px-5">
+    <img class="img-fluid col-md-8 col-lg-6 col-sm-10" src="https://1000marcas.net/wp-content/uploads/2020/01/logo-F1.png">
+    <h1 class="Driverstitle col-12">FORMULA-1 DRIVERS</h1>
+    </div>
+
+   <div class="drivers row col-12 container justify-content-center">
+    <% drivers.forEach(driver => { %>
+        <div class="driver-card col-sm-10 sol-md-10 col-lg-3 container-fluid card mx-2 my-5 pt-5 pb-1 px-2 border-dark" style="width: fit-content;">
+
+          <div class="container justify-content-center align-center">
+            <h2 class="drivertitle text-uppercase"><%= driver.name %></h2>
+            <h5 class="drivertitleteam text-uppercase py-2 "style="border-radius: 30px;" ><%= driver.team %></h5>
+          <img class="teamlogoimg2 container-fluid my-2"  src="<%= driver.logo %>" alt="Team Logo" style=" width: auto; margin-left: 10px;">
+          </div>
+
+          <img src="<%= driver.image %>" class="card-img-top" alt="<%= driver.name %>">
+           <div class="container statcontainer my-4 py-3">
+            <p class="statpara my-1 ">Wins: <%= driver.wins %></p>
+            <p class="statpara my-1 ">Podiums: <%= driver.podiums %></p>
+            <p class="statpara my-1 ">Poles: <%= driver.poles %></p>
+            <p class="statpara my-1 ">Championships: <%= driver.championships %></p>
+            <p class="statpara my-1 ">Nationality: <%= driver.nationality %></p>
+            <p class="statpara my-1 ">Age: <%= driver.age %></p>
+           </div>
+        </div>
+      <% }) %>
+    
+   </div>
+  
+  </div>
+  
+  <%- include('partials/footer') %>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
