@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const { Pool } = require('pg');
 const pool = require('../db/db');
 
 // Home route
@@ -24,7 +23,6 @@ router.get('/championships', async (req, res) => {
   try {
     const result = await pool.query('SELECT * FROM championships ORDER BY year DESC');
     const championships = result.rows;
-    console.log(championships);
     res.render('championships', { championships });
   } catch (error) {
     console.error('Error fetching championships:', error);
