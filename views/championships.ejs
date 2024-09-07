@@ -11,15 +11,15 @@
 </head>
 <body>
 
-<div class="row section3 justify-content-center my-3 mx-0 text-center align-items-center">
+<div class="row section3 justify-content-center px-0 my-0 mx-0 text-center align-items-center">
 
-  <div class="row champhead justify-content-center align-items-center mt-5 mb-5 pb-3">
+  <div class="row champhead container-fluid justify-content-center align-items-center px-0 mt-5 mb-5 pb-3">
     <div class="col-12"></div>
     <div class="col-12">
       <img class="img-fluid col-md-8 col-lg-6 col-sm-10" src="https://1000marcas.net/wp-content/uploads/2020/01/logo-F1.png">
     </div>
-    <div class="col-sm-12 col-md-8 col-lg-5 champtitle1"><h1>FORMULA-ONE CHAMPIONSHIPS</h1></div>
-    <div class="col-sm-10 col-md-8 col-lg-8 champtitle2 mt-3 pt-3 mb-5 pb-5 ">Everything about the champions and championship battles throughout the years in formula one</div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 container-fluid champtitle1"><span>FORMULA-ONE CHAMPIONSHIPS</span></div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 champtitle2 mt-3 pt-3 mb-5 pb-5 ">Everything about the champions and championship battles throughout the years in formula one</div>
   </div>
      
 
@@ -29,12 +29,14 @@
 
 
 
-  <div class="accordion col-sm-12 col-md-12 col-lg-10 mt-4" id="championshipsAccordion">
+  <div class="accordion col-sm-10 col-md-10 col-lg-10 mt-4" id="championshipsAccordion">
     <% championships.forEach(champ => { %>
       <div class="accordion-item">
         <p class="accordion-header accbuttext " id="heading<%= champ.year %>">
-          <button class="accordion-button accbutt w-100 text-uppercase" style="white-space: nowrap;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= champ.year %>" aria-expanded="true" aria-controls="collapse<%= champ.year %>"><h5 class="mb-0 pb-0 mt-0 pt-3 h5championship " >Championship <%= champ.year %></h5><h2 class="pt-1 pb-0 mb-0 h2name"><%= champ.champion_name %></h2>
-            <img class="teamlogoimg"  src="<%= champ.logo %>" alt="Team Logo" style=" width: auto; margin-left: 10px;"> <h6 class="h6team" ><%= champ.team %></h6>
+          <button class="accordion-button accbutt w-100 text-uppercase" style="white-space: nowrap;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= champ.year %>" aria-expanded="true" aria-controls="collapse<%= champ.year %>"><div class="row justify-content-center">
+            <span class="mb-0 pb-0 mt-0 pt-3 h5championship col-10 " >Championship <%= champ.year %></span><span class="col-12 pt-1 pb-0 mb-0 h2name"><%= champ.champion_name %></span>
+            <img class="teamlogoimg"  src="<%= champ.logo %>" alt="Team Logo" style=" width: auto; margin-left: 10px;"> <span class="col-12 h6team" ><%= champ.team %></span>
+          </div>
           </button>
         </p>
         <div id="collapse<%= champ.year %>" class="accordion-collapse collapse" aria-labelledby="heading<%= champ.year %>" data-bs-parent="#championshipsAccordion">
