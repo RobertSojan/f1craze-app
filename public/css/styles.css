@@ -6,7 +6,7 @@
 
 /* Example styles.css */
   body {
-    min-width: 400px;
+    min-width: 350px;
   }
 
    .mytitle {
@@ -74,17 +74,37 @@
     font-size: 13px;
   }
   .h2name {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bolder;
     color: ghostwhite;
   }
   .storypara {
     font-size: 13px;
   }
+  .mainpara {
+    color: rgb(255, 255, 255);
+    font-family:"Poppins", system-ui;
+    font-weight: normal;
+  }
   .champtitle2 {
     font-size: 14px;
   }
+  .section4 {
+    background-color: rgb(44, 44, 44);
+  }
+  .custom-bg {
+    background-color: rgb(44, 44, 44);
+  }
+  .smimg {
+    background-color: rgb(44,44,44);
+  }
 
+}
+
+@media(max-width:570px) {
+  .champtitle2 {
+    display: none;
+  }
 }
 
 @media(max-width: 1500px) {
@@ -94,7 +114,7 @@
     font-style: normal;
     font-weight: bolder;
     word-spacing: 17px;
-    font-size: x-large;
+    font-size: large;
     letter-spacing: 4px;
 }
 .champtitle2 {
@@ -104,7 +124,7 @@
   word-spacing: 2px;
 }
 .h2name {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
   color: ghostwhite;
 }
@@ -228,7 +248,7 @@
 }
 .comsoo {
     font-family: "Poppins", system-ui;
-    color: rgb(190, 35, 35);
+    color: rgb(255, 82, 82);
     font-weight: 300;
     font-style: normal;
     font-weight: bold;
@@ -247,7 +267,7 @@
   font-family: "Poppins", system-ui;
 }
 .teamlogoimg2 {
-  height: 60px;
+  height: 30px;
   width: auto;
 }
 .statcontainer {
